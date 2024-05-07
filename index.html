@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Spring</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.10.5/full.min.css"
+        integrity="sha512-3qKZN2+F2itPU6BHDN9pvIvXdZSmE0f3SV9IU5pXuor6ZIFkRG8Y6H/EQSnLQjaWwpGxJF/atFra/IFIDPfmxQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <!-- header top start -->
+    <div class="bg-[rgb(28,103,50)] text-white py-2">
+        <div class="max-w-[1140px] container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 flex justify-center md:justify-center">
+                <div class="items-center hidden lg:flex">
+                    <div class="flex gap-1 items-center">
+                        <div>
+                            <svg height="16px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <b>Email Us:</b>
+                        <a href="mailto:xyz@gmail.com" class="hover:text-black">xyz@gmail.com</a>
+                    </div>
+                    <div class="px-2">
+                        |
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <div>
+                            <svg height="16px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <b>Hotline:</b>
+                        <a href="tel:01712345678" class="hover:text-black">+8801712 345 678</a>
+                    </div>
+                </div>
+                <div class="flex lg:justify-end justify-center items-center gap-1">
+                    <div>
+                        |
+                    </div>
+                    <div>
+                        <svg height="16px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M20 22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <a href="#" class="hover:text-black">Login/Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header top end -->
+    <!-- header start -->
+    <header class="container max-w-[1140px] mx-auto py-2">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a>Appointment</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Publication</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Blog</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">
+                    <img src="./assets/logo.webp" alt="">
+                </a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <details>
+                            <summary>Appointment</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Publication</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a>Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- hero start -->
+        <section class="hero__section">
+            <div class="container mx-auto max-w-[1140px] px-[3rem] lg:px-0  min-h-[80vh] flex items-center">
+                <div class="grid grid-cols-2">
+                    <div class="hero-style4"><span class="hero-subtitle th-sub">Find and book the best doctors near
+                            you</span>
+                        <form role="search" method="get" action="" class="search-form">
+                            <div class="form-group"><i class="far fa-search"></i> <input value="" name="s" type="text"
+                                    placeholder="Search for doctors, specialist and services....."></div><button
+                                class="th-btn th_btn" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        <!-- hero end -->
+    </main>
 </body>
+
 </html>
