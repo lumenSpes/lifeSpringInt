@@ -11,6 +11,16 @@
     --theme-color: rgb(28,103,50);
     --body-color: #4D5765;
     --smoke-color: #F3F7FB;
+    --font-roboto: "Roboto", sans-serif;
+    --font-jost: "Jost", sans-serif;
+}
+
+.font__roboto{
+    font-family: var(--font-roboto) !important;
+}
+
+.font__jost{
+    font-family: var(--font-jost) !important;
 }
 
 .hero__section{
