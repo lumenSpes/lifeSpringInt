@@ -124,3 +124,46 @@
     }
 }
 
+/* partners section */
+
+.slide__partners {
+    position: relative;
+    z-index: 1;
+}
+
+.slide__partners .slider__partner__leftArrow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    opacity: 80%;
+    z-index: 5;
+    stroke-width: 3px !important;
+}
+.slide__partners .slider__partner__rightArrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    opacity: 80%;
+    z-index: 5;
+    stroke-width: 3px !important;
+}
+
+.service__details__box {
+    box-shadow: -1.21px 6.894px 15px 0 rgba(0, 0, 0, .07);
+}
+
+.service__btn {
+    padding: 14px 20px;
+    color: #fff;
+    background-color: #4a9e32;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f7f9fb;
+    border-radius: 5px 5px 5px 5px;
+}
